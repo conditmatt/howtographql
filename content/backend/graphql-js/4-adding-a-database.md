@@ -90,9 +90,6 @@ Now, let's see what you need to do with `prisma.yml`.
 Add the following contents to `prisma.yml`:
 
 ```graphql(path=".../hackernews-node/prisma/prisma.yml")
-# The HTTP endpoint for your Prisma API
-endpoint: ''
-
 # Points to the file that contains your datamodel
 datamodel: datamodel.prisma
 
@@ -108,7 +105,6 @@ To learn more about the structure of `prisma.yml`, feel free to check out the [d
 
 Here's a quick explanation of each property you see in that file:
 
-- `endpoint`: The HTTP endpoint for your Prisma API.
 - `datamodel`: Points to the datamodel file which is the foundation for the Prisma client API that you'll use in your API server.
 - `generate`: Specifies in which language the Prisma client should be generated and where it will be located.
 
@@ -124,7 +120,11 @@ yarn global add prisma
 
 </Instruction>
 
-All right, you're finally ready to deploy your Prisma datamodel and the database that comes along! 🙌 Note that for this tutorial, you'll use a free _demo database_ ([AWS Aurora](https://aws.amazon.com/de/rds/aurora/)) that's hosted in Prisma Cloud. If you want to learn more about setting up Prisma locally or with your own database, you can check the documentation [here](https://www.prisma.io/docs/-a002/).
+All right, you're finally ready to deploy your Prisma datamodel and the database that comes along! 🙌 Note that for this tutorial, you'll use a free _demo database_ ([AWS Aurora](https://aws.amazon.com/de/rds/aurora/)) that's hosted in Prisma Cloud. If you want to learn more about setting up Prisma locally or with your own database, you can check the documentation [here](https://www.prisma.io/docs/-a002/).  
+
+<Instruction>
+First, you'll have to create a prisma account to utilize a demo database.  The easiest way to do this is with a github account, but you can also utilize a custom email and password.  Visit [the prisma signup page](https://app.prisma.io/signup) to create an account.
+</Instruction>
 
 <Instruction>
 
